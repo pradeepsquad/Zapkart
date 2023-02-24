@@ -13,10 +13,26 @@ const Tab = createBottomTabNavigator();
 export default function BottomTab() {
   return (
     <Tab.Navigator screenOptions={{headerShown: false}}>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Category" component={CategoryScreen} />
-      <Tab.Screen name="Cart" component={CartScreen} />
-      <Tab.Screen name="Prescription" component={PrescriptionScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{headerShown: true}}
+      />
+      <Tab.Screen
+        name="Category"
+        component={CategoryScreen}
+        options={{headerShown: true}}
+      />
+      <Tab.Screen
+        name="Cart"
+        component={CartScreen}
+        options={{headerShown: true}}
+      />
+      <Tab.Screen
+        name="Prescription"
+        component={PrescriptionScreen}
+        options={{headerShown: true}}
+      />
     </Tab.Navigator>
   );
 }
